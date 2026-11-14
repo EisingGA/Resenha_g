@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: resenha
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /health
+    envVars:
+      # Opcional: relay TURN para amigos em redes que bloqueiam conexão direta.
+      - key: TURN_URL
+        sync: false
+      - key: TURN_USER
+        sync: false
+      - key: TURN_PASS
+        sync: false

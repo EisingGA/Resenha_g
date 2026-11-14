@@ -1,0 +1,16 @@
+{
+  "name": "resenha",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chat, voz e compartilhamento de tela para os amigos, sem conta.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "8.18.0"
+  }
+}

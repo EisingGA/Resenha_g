@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1e1f22">
+  <title>Resenha</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <nav id="groups" aria-label="Grupos"></nav>
+    <aside id="sidebar">
+      <header id="groupHeader"></header>
+      <div id="channels"></div>
+      <div id="voicePanel" hidden></div>
+      <div id="userPanel"></div>
+    </aside>
+    <main id="main">
+      <header id="mainHeader"></header>
+      <div id="offline">Sem conexão com o servidor. Reconectando…</div>
+      <section id="welcome" hidden></section>
+      <section id="chat" hidden>
+        <div id="messages"></div>
+        <form id="composer" autocomplete="off">
+          <div class="composer-box">
+            <textarea id="input" rows="1" maxlength="2000" placeholder="Conversar em #geral"></textarea>
+          </div>
+        </form>
+      </section>
+      <section id="stage" hidden>
+        <div id="tiles"></div>
+        <div id="controls"></div>
+      </section>
+    </main>
+    <aside id="members" aria-label="Membros"></aside>
+  </div>
+  <div id="scrim"></div>
+  <div id="modal" hidden></div>
+  <div id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
